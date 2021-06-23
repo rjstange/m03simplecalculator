@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android ATC Calculator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_view"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:hint="Enter The First Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Enter The Second Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number1" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/button_divide"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/button_plus"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="132dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
